@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="5u9YpboPFbMVh0nalaKlfPuJr8ShVQPI5I-3mURCPfU" />
-    <title>Mithran Sengunthar Matrimony | Trusted Matchmaking</title>
-    <meta name="description" content="A trusted and reliable matrimonial service exclusive to the Hindu Sengunthar and Kaikolar community. Organized by Jayanthi Karthikeyan.">
-    <meta name="keywords" content="sengunthar matrimony, kaikolar marriage, trusted matrimony tamil nadu, jayanthi karthikeyan, thanjavur matrimony, sengunthar brides">
+    <title>Mithran Sengunthar Matrimony | Trusted & Verified Matchmaking</title>
+    <meta name="description" content="A trusted, verified, and reliable matchmaking service for the Hindu Sengunthar and Kaikolar community. Register today to find the perfect bride or groom.">
+    <meta name="keywords" content="sengunthar matrimony, kaikolar marriage, trusted matrimony tamil nadu, sengunthar brides, sengunthar grooms, verified matchmaking, jayanthi karthikeyan">
     
-    <meta property="og:title" content="Mithran Sengunthar Matrimony | Trusted Community Service">
-    <meta property="og:description" content="Exclusive matchmaking for the Hindu Sengunthar & Kaikolar community. Contact us to find your perfect match.">
+    <meta property="og:title" content="Mithran Sengunthar Matrimony | Verified Matchmaking">
+    <meta property="og:description" content="A reliable and authentic community service for the Hindu Sengunthar & Kaikolar community. Contact us to find your perfect match.">
     <meta property="og:image" content="https://mithransenguntharmatrimony.github.io/banner.webp">
     <meta property="og:type" content="website">
 
+    <link rel="preload" as="image" href="./banner.webp" fetchpriority="high">
+
     <style>
-        /* Modern & Traditional Color Palette */
+        /* Premium Color Palette */
         :root {
             --maroon: #7B1113; 
             --gold: #D4AF37;  
             --text-main: #2b2b2b;
             --text-muted: #555555;
-            --bg-page: #f4f6f8; 
+            --bg-page: #f0f2f5; 
             --white: #FFFFFF;
             --whatsapp: #25D366;
+            --border-light: #eaeaea;
         }
 
         body, html { 
@@ -34,14 +37,15 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Main App-like Container */
-        .main-wrapper {
-            max-width: 650px; 
+        /* Full-Width Desktop Container */
+        .main-container {
+            max-width: 1100px; 
             margin: 0 auto;
             background-color: var(--white);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.08);
             min-height: 100vh;
-            position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Top Banner */
@@ -54,10 +58,10 @@
             width: 100%;
             height: auto;
             display: block;
-            object-fit: contain;
+            object-fit: cover;
         }
 
-        /* Premium Trust Badge */
+        /* Premium Trust Badge (Full Width) */
         .trust-badge {
             background: linear-gradient(135deg, #fffaf0 0%, #fdf5e6 100%);
             color: var(--maroon);
@@ -71,70 +75,93 @@
         }
         .trust-badge .icon { font-size: 28px; }
         .trust-badge .text-group { text-align: left; }
-        .trust-badge .eng { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; }
-        .trust-badge .tam { font-size: 13px; font-weight: 500; color: #666; margin-top: 2px; }
+        .trust-badge .eng { font-size: 17px; font-weight: 700; letter-spacing: 0.5px; }
+        .trust-badge .tam { font-size: 14px; font-weight: 500; color: #666; margin-top: 2px; }
 
-        /* Content Area */
-        .content { padding: 30px 20px; }
+        /* Bilingual Intro Text */
+        .intro-text {
+            text-align: center;
+            padding: 30px 20px 10px 20px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .intro-text .eng { color: #444; font-size: 17px; margin-bottom: 12px; }
+        .intro-text .eng strong { color: var(--maroon); }
+        .intro-text .tam { color: #555; font-size: 15px; font-weight: 500; line-height: 1.7; }
 
-        /* Modern Card Layout for Instructions */
+        /* Responsive 2-Column Grid Layout */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 column on mobile */
+            gap: 40px;
+            padding: 30px 20px 40px 20px;
+            flex-grow: 1;
+        }
+        
+        @media (min-width: 800px) {
+            .content-grid {
+                grid-template-columns: 1fr 1fr; /* 2 columns on web */
+                padding: 40px;
+                align-items: start;
+            }
+        }
+
+        /* Left Column: Action Card */
         .action-card {
             background: var(--white);
-            border: 1px solid #f0f0f0;
+            border: 1px solid var(--border-light);
             border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.03);
             position: relative;
             overflow: hidden;
         }
         .action-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 4px;
+            top: 0; left: 0; width: 100%; height: 5px;
             background: var(--maroon);
         }
-        
         .action-card h2 { 
             color: var(--maroon); 
             margin-top: 0; 
-            font-size: 20px; 
+            font-size: 22px; 
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .step-row {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 18px;
-            gap: 12px;
+            margin-bottom: 20px;
+            gap: 15px;
         }
         .step-row:last-child { margin-bottom: 0; }
         .step-icon {
             background: #fcf4f4;
             color: var(--maroon);
-            width: 32px; height: 32px;
+            width: 36px; height: 36px;
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-weight: bold; font-size: 14px;
+            font-weight: bold; font-size: 16px;
             flex-shrink: 0;
         }
-        .step-text .eng { font-size: 15px; font-weight: 600; color: var(--text-main); }
-        .step-text .tam { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+        .step-text .eng { font-size: 16px; font-weight: 600; color: var(--text-main); }
+        .step-text .tam { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
 
-        /* Modern Buttons */
+        /* Buttons */
         .btn-container {
             display: flex;
             flex-direction: column;
-            gap: 14px;
-            margin-top: 25px;
+            gap: 16px;
+            margin-top: 30px;
         }
         .btn {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 15px 20px;
+            padding: 16px 20px;
             border-radius: 12px;
             text-decoration: none;
             border: none;
@@ -143,194 +170,200 @@
             box-sizing: border-box;
             transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
         }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
         .btn:active { transform: scale(0.98); }
         
-        .btn-eng { font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
-        .btn-tam { font-size: 12px; margin-top: 4px; opacity: 0.9; font-weight: 500; }
+        .btn-eng { font-size: 17px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+        .btn-tam { font-size: 13px; margin-top: 4px; opacity: 0.9; font-weight: 500; }
 
         .btn-whatsapp { 
             background-color: var(--whatsapp); 
             color: var(--white); 
-            box-shadow: 0 8px 16px rgba(37, 211, 102, 0.2);
-            animation: pulse-green 2s infinite;
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.25);
         }
         .btn-call { 
             background-color: #f8f9fa; 
             color: var(--text-main); 
-            border: 1px solid #e0e0e0; 
+            border: 1px solid #ddd; 
         }
         .btn-share { 
             background-color: #eef2f5; 
             color: #0056b3; 
-            margin-top: 10px;
+            border: 1px solid #d4e2ef;
         }
 
-        @keyframes pulse-green {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
-            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        /* Right Column: Information & Preview */
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
+
+        /* Professional Contact Box */
+        .contact-box {
+            background-color: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+        .contact-box h3 { color: var(--maroon); margin: 0 0 15px 0; font-size: 18px; border-bottom: 1px solid #eee; padding-bottom: 10px;}
+        .contact-row { margin: 10px 0; font-size: 16px; color: #444; display: flex; align-items: center; gap: 8px;}
+        .highlight-phone { font-size: 22px; font-weight: 800; color: var(--maroon); text-decoration: none; }
+        .holiday { color: #d9534f; font-size: 14px; font-weight: 600; margin-top: 5px; }
+
+        /* Fee Transparency Notice */
+        .fee-notice {
+            background-color: #fffaf0;
+            border: 1px solid #eaddc0;
+            border-left: 4px solid var(--gold);
+            border-radius: 8px;
+            padding: 18px;
+            margin-top: 15px;
+        }
+        .fee-notice p { margin: 5px 0; font-size: 15px; color: #333; line-height: 1.5; }
+        .fee-notice strong { color: var(--maroon); font-size: 16px; }
+        .fee-tam { font-size: 14px !important; color: #555 !important; margin-top: 8px !important; }
 
         /* Document Preview Area */
         .preview-area {
             background: #fafafa;
-            border: 1px dashed #dcdcdc;
+            border: 1px dashed #ccc;
             border-radius: 12px;
             padding: 20px;
             text-align: center;
-            margin-bottom: 20px;
         }
-        .preview-area h3 { color: var(--text-muted); font-size: 14px; margin-top: 0; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;}
+        .preview-area h3 { color: var(--text-muted); font-size: 15px; margin-top: 0; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;}
         .preview-area img {
             width: 100%;
-            max-width: 400px;
+            max-width: 450px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            border: 1px solid #eaeaea;
+            border: 1px solid var(--border-light);
         }
 
-        /* Premium Contact Footer */
+        /* Footer */
         .footer {
-            background-color: #ffffff;
-            border-top: 1px solid #eee;
-            padding: 30px 20px;
+            background-color: #2b2b2b;
+            color: #ccc;
             text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            margin-top: auto;
         }
-        .footer-title { color: var(--maroon); margin: 0 0 15px 0; font-size: 18px; }
-        
-        .contact-card {
-            background: #fcfaf7;
-            border: 1px solid #f0e6d2;
-            padding: 15px;
-            border-radius: 12px;
-            display: inline-block;
-            text-align: left;
-            margin-bottom: 15px;
-        }
-        .contact-row { margin: 8px 0; font-size: 15px; color: #444; display: flex; align-items: center; gap: 8px;}
-        .highlight-phone { font-size: 20px; font-weight: 800; color: var(--maroon); text-decoration: none; }
-        .holiday { color: #d9534f; font-size: 13px; font-weight: 600; margin-top: 10px; text-align: center;}
-        
-        /* Fee Transparency Notice */
-        .fee-notice {
-            background-color: #fffaf0;
-            border: 1px dashed #cca450;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 25px auto 10px auto;
-            max-width: 90%;
-            text-align: center;
-        }
-        .fee-notice p { margin: 5px 0; font-size: 14px; color: #333; line-height: 1.5; }
-        .fee-notice strong { color: var(--maroon); font-size: 15px; }
-        .fee-tam { font-size: 13px !important; color: #555 !important; margin-top: 8px !important; }
 
-        .copyright { margin-top: 25px; font-size: 12px; color: #999; }
-
-        @media (max-width: 500px) {
-            .content { padding: 20px 15px; }
+        @media (max-width: 600px) {
             .trust-badge { flex-direction: column; text-align: center; gap: 8px; }
             .trust-badge .text-group { text-align: center; }
-            .fee-notice { padding: 12px; }
+            .intro-text { padding: 20px 15px 5px 15px; }
+            .intro-text .eng { font-size: 15px; }
+            .intro-text .tam { font-size: 14px; }
         }
     </style>
 </head>
 <body>
 
-<div class="main-wrapper">
+<div class="main-container">
 
     <div class="top-banner">
-        <img src="./banner.webp" alt="Mithran Sengunthar Matrimony Banner">
+        <img src="./banner.webp" alt="Mithran Sengunthar Matrimony Banner" fetchpriority="high" decoding="async">
     </div>
 
     <div class="trust-badge">
         <div class="icon">🛡️</div>
         <div class="text-group">
-            <div class="eng">Trusted & Reliable Community Service</div>
-            <div class="tam">நம்பகமான செங்குந்தர் சமுதாய சேவை</div>
+            <div class="eng">Trusted & Verified Matchmaking</div>
+            <div class="tam">நம்பகமான மற்றும் சரிபார்க்கப்பட்ட வரன் சேவை</div>
         </div>
     </div>
 
-    <div class="content">
+    <div class="intro-text">
+        <div class="eng">Welcome to <strong>Mithran Matrimony</strong>. We provide an authentic, reliable, and highly trusted matchmaking platform to help you find the perfect bride or groom within the Hindu Sengunthar and Kaikolar community.</div>
+        <div class="tam">இந்து செங்குந்தர் / கைக்கோளர் சமுதாயத்தினருக்கு நம்பகமான மற்றும் சரிபார்க்கப்பட்ட வரன்களை தேர்ந்தெடுத்து, திருமண சுபகாரியங்களை இனிதே நடத்த எங்கள் மித்ரன் மேட்ரிமோனிக்கு உங்களை வரவேற்கிறோம்.</div>
+    </div>
+
+    <div class="content-grid">
         
-        <div class="action-card">
-            <h2>Find Your Perfect Match<br><span style="font-size: 16px; color: #666; font-weight: normal;">சரியான வரனை தேட</span></h2>
-            
-            <div class="step-row">
-                <div class="step-icon">1</div>
-                <div class="step-text">
-                    <div class="eng">Message us on WhatsApp</div>
-                    <div class="tam">எங்களை வாட்ஸ்அப்பில் தொடர்பு கொள்ளவும்</div>
+        <div class="left-column">
+            <div class="action-card">
+                <h2>Register to Find a Match<br><span style="font-size: 16px; color: #666; font-weight: normal;">வரனை தேட பதிவு செய்யவும்</span></h2>
+                
+                <div class="step-row">
+                    <div class="step-icon">1</div>
+                    <div class="step-text">
+                        <div class="eng">Contact us on WhatsApp</div>
+                        <div class="tam">எங்களை வாட்ஸ்அப்பில் தொடர்பு கொள்ளவும்</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="step-row">
-                <div class="step-icon">2</div>
-                <div class="step-text">
-                    <div class="eng">Get the official biodata format</div>
-                    <div class="tam">அதிகாரப்பூர்வ பயோடேட்டா படிவத்தை பெறுங்கள்</div>
+                
+                <div class="step-row">
+                    <div class="step-icon">2</div>
+                    <div class="step-text">
+                        <div class="eng">Get the authentic biodata format</div>
+                        <div class="tam">அதிகாரப்பூர்வ பயோடேட்டா படிவத்தை பெறுங்கள்</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="step-row">
-                <div class="step-icon">3</div>
-                <div class="step-text">
-                    <div class="eng">Join our verified matchmaking group</div>
-                    <div class="tam">எங்கள் சரிபார்க்கப்பட்ட வரன் குழுவில் இணையுங்கள்</div>
+                
+                <div class="step-row">
+                    <div class="step-icon">3</div>
+                    <div class="step-text">
+                        <div class="eng">Join our verified matchmaking group</div>
+                        <div class="tam">எங்கள் சரிபார்க்கப்பட்ட வரன் குழுவில் இணையுங்கள்</div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="btn-container">
-                <a href="https://wa.me/918072514912?text=Vanakkam,%20I%20would%20like%20to%20register%20for%20Mithran%20Matrimony.%20Please%20send%20me%20the%20biodata%20format." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                    <span class="btn-eng"><svg style="width:20px;height:20px;fill:white;" viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.976L2 22l5.187-1.339a9.982 9.982 0 004.825 1.25h.004c5.504 0 9.988-4.479 9.988-9.985S17.518 2 12.012 2zm0 16.973h-.003a8.312 8.312 0 01-4.242-1.157l-.304-.18-3.153.813.842-3.05-.198-.314a8.283 8.283 0 01-1.274-4.426c0-4.588 3.738-8.324 8.33-8.324 2.223 0 4.312.864 5.882 2.435s2.435 3.655 2.435 5.882c-.001 4.588-3.738 8.321-8.315 8.321zm4.568-6.22c-.25-.125-1.482-.731-1.712-.815-.23-.083-.398-.125-.565.125-.167.25-.648.814-.795.981-.146.167-.294.188-.544.063-.25-.125-1.057-.39-2.015-1.246-.745-.664-1.248-1.486-1.395-1.735-.146-.25-.015-.385.11-.51.112-.112.25-.291.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.565-1.36-.774-1.862-.204-.49-.41-.424-.565-.432l-.48-.008c-.167 0-.438.063-.667.313-.23.25-.875.854-.875 2.083s.896 2.417 1.021 2.583c.125.167 1.765 2.69 4.275 3.775.598.258 1.065.412 1.428.528.6.19 1.147.163 1.577.099.48-.072 1.482-.605 1.691-1.188.208-.583.208-1.083.146-1.188-.063-.105-.23-.167-.48-.292z"/></svg> Register via WhatsApp</span>
-                    <span class="btn-tam">வாட்ஸ்அப் மூலம் பதிவு செய்ய</span>
-                </a>
+                <div class="btn-container">
+                    <a href="https://wa.me/918072514912?text=Vanakkam,%20I%20am%20seeking%20a%20match%20(Bride/Groom)%20and%20would%20like%20to%20register%20for%20Mithran%20Matrimony.%20Please%20send%20me%20the%20official%20biodata%20format." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <span class="btn-eng"><svg style="width:20px;height:20px;fill:white;" viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.976L2 22l5.187-1.339a9.982 9.982 0 004.825 1.25h.004c5.504 0 9.988-4.479 9.988-9.985S17.518 2 12.012 2zm0 16.973h-.003a8.312 8.312 0 01-4.242-1.157l-.304-.18-3.153.813.842-3.05-.198-.314a8.283 8.283 0 01-1.274-4.426c0-4.588 3.738-8.324 8.33-8.324 2.223 0 4.312.864 5.882 2.435s2.435 3.655 2.435 5.882c-.001 4.588-3.738 8.321-8.315 8.321zm4.568-6.22c-.25-.125-1.482-.731-1.712-.815-.23-.083-.398-.125-.565.125-.167.25-.648.814-.795.981-.146.167-.294.188-.544.063-.25-.125-1.057-.39-2.015-1.246-.745-.664-1.248-1.486-1.395-1.735-.146-.25-.015-.385.11-.51.112-.112.25-.291.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.565-1.36-.774-1.862-.204-.49-.41-.424-.565-.432l-.48-.008c-.167 0-.438.063-.667.313-.23.25-.875.854-.875 2.083s.896 2.417 1.021 2.583c.125.167 1.765 2.69 4.275 3.775.598.258 1.065.412 1.428.528.6.19 1.147.163 1.577.099.48-.072 1.482-.605 1.691-1.188.208-.583.208-1.083.146-1.188-.063-.105-.23-.167-.48-.292z"/></svg> Contact via WhatsApp</span>
+                        <span class="btn-tam">வாட்ஸ்அப்பில் தொடர்பு கொள்ள</span>
+                    </a>
 
-                <a href="tel:+918072514912" class="btn btn-call">
-                    <span class="btn-eng">📞 Call: 8072514912</span>
-                    <span class="btn-tam">அழைக்க</span>
-                </a>
+                    <a href="tel:+918072514912" class="btn btn-call">
+                        <span class="btn-eng">📞 Tap to Call: 8072514912</span>
+                        <span class="btn-tam">அழைக்க</span>
+                    </a>
+                    
+                    <button onclick="sharePage()" class="btn btn-share">
+                        <span class="btn-eng">🔗 Share with Relatives</span>
+                        <span class="btn-tam">உறவினர்களுடன் பகிரவும்</span>
+                    </button>
+                </div>
             </div>
         </div>
 
-        <button onclick="sharePage()" class="btn btn-share">
-            <span class="btn-eng">🔗 Share with Relatives</span>
-            <span class="btn-tam">உறவினர்களுடன் பகிரவும்</span>
-        </button>
+        <div class="right-column">
+            
+            <div class="contact-box">
+                <h3>Contact Details / தொடர்பு விவரங்கள்</h3>
+                <div class="contact-row">
+                    👤 <strong>Organizer:</strong> Jayanthi Karthikeyan (Thanjavur)
+                </div>
+                <div class="contact-row">
+                    📱 <a href="tel:+918072514912" class="highlight-phone">8072514912</a>
+                </div>
+                <div class="contact-row">
+                    🕒 <strong>Timings:</strong> 10:00 AM - 6:00 PM
+                </div>
+                <div class="holiday">(சனிக்கிழமை விடுமுறை / Saturday Holiday)</div>
 
-        <div class="preview-area" style="margin-top: 30px;">
-            <h3>Sample Format Preview / மாதிரி படிவம்</h3>
-            <img src="./sengunthar-mudaliyar-matrimony.jpg" alt="Sengunthar Matrimony Biodata Preview">
+                <div class="fee-notice">
+                    <p>💡 <strong>Fee Information:</strong> Registration is completely free. A standard charge of <strong>₹100</strong> is applicable <em>only</em> for printing the format after your details are provided.</p>
+                    <p class="fee-tam"><strong>கட்டண விவரம்:</strong> பதிவு இலவசம். உங்கள் விவரங்களை அளித்த பிறகு, படிவத்தை அச்சிடுவதற்காக (Printing) மட்டும் <strong>₹100</strong> கட்டணம் வசூலிக்கப்படும்.</p>
+                </div>
+            </div>
+
+            <div class="preview-area">
+                <h3>Official Format Preview / மாதிரி படிவம்</h3>
+                <img src="./sengunthar-mudaliyar-matrimony.jpg" alt="Authentic Sengunthar Matrimony Biodata Preview" loading="lazy">
+            </div>
+
         </div>
 
     </div>
 
     <div class="footer">
-        <h3 class="footer-title">Contact & Organization Details</h3>
-        
-        <div class="contact-card">
-            <div class="contact-row">
-                👤 <strong>Organizer:</strong> Jayanthi Karthikeyan
-            </div>
-            <div class="contact-row">
-                📱 <a href="tel:+918072514912" class="highlight-phone">8072514912</a>
-            </div>
-            <div class="contact-row">
-                🕒 <strong>Timings:</strong> 10:00 AM - 6:00 PM
-            </div>
-        </div>
-        
-        <div class="holiday">(சனிக்கிழமை விடுமுறை / Saturday Holiday)</div>
-
-        <div class="fee-notice">
-            <p>💡 <strong>Fee Information:</strong> Registration is free. A charge of <strong>₹100</strong> is applicable <em>only</em> for printing the format after your details are provided.</p>
-            <p class="fee-tam"><strong>கட்டண விவரம்:</strong> பதிவு இலவசம். உங்கள் விவரங்களை அளித்த பிறகு, படிவத்தை அச்சிடுவதற்காக (Printing) மட்டும் <strong>₹100</strong> கட்டணம் வசூலிக்கப்படும்.</p>
-        </div>
-
-        <div class="copyright">
-            © Mithran Matrimony.<br>An exclusive matchmaking platform for the Hindu Sengunthar / Kaikolar community.
-        </div>
+        © Mithran Matrimony.<br>A trusted and reliable matchmaking service exclusively for the Sengunthar community.
     </div>
 
 </div>
@@ -340,7 +373,7 @@
         if (navigator.share) {
             navigator.share({
                 title: 'Mithran Sengunthar Matrimony',
-                text: 'Trusted and reliable matchmaking for the Hindu Sengunthar community. Contact Jayanthi Karthikeyan to register.',
+                text: 'A trusted, verified, and reliable community service for the Sengunthar community. Contact Jayanthi Karthikeyan to register and find your perfect match.',
                 url: window.location.href
             }).catch(console.error);
         } else {
