@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="5u9YpboPFbMVh0nalaKlfPuJr8ShVQPI5I-3mURCPfU" />
-    
     <title>Mithran Sengunthar Matrimony | Free Non-Profit Service</title>
-    <meta name="description" content="A legitimate, non-profit matrimonial service for Hindu Sengunthar & Kaikolar. Organized locally in Thanjavur by Jayanthi Karthikeyan. 100% Free.">
+    <meta name="description" content="A legitimate, non-profit matrimonial service for Hindu Sengunthar & Kaikolar. Contact Jayanthi Karthikeyan to register for free.">
     <meta name="keywords" content="sengunthar matrimony, kaikolar marriage, non profit matrimony tamil nadu, jayanthi karthikeyan, thanjavur matrimony">
     
     <meta property="og:title" content="Mithran Sengunthar Matrimony | Free Community Service">
-    <meta property="og:description" content="Download our official biodata format. A trusted, non-profit matchmaking initiative for our community.">
+    <meta property="og:description" content="Contact us to get the official biodata format and join our matchmaking WhatsApp group. 100% Free.">
     <meta property="og:image" content="https://mithransenguntharmatrimony.github.io/banner.png">
     <meta property="og:type" content="website">
 
@@ -35,7 +34,7 @@
 
         /* Laptop & Mobile Container */
         .main-wrapper {
-            max-width: 800px; /* Keeps it perfectly sized on laptops */
+            max-width: 800px;
             margin: 0 auto;
             background-color: var(--white);
             box-shadow: 0 0 20px rgba(0,0,0,0.05);
@@ -52,7 +51,7 @@
             width: 100%;
             height: auto;
             display: block;
-            object-fit: contain; /* Ensures no cropping on any device */
+            object-fit: contain;
         }
 
         /* Trust & Non-Profit Badge */
@@ -73,49 +72,20 @@
         /* Content Padding */
         .content { padding: 25px 20px; }
 
-        /* Section Headings */
-        .section-title {
-            color: var(--maroon);
-            text-align: center;
-            font-size: 22px;
-            margin-bottom: 20px;
-            border-bottom: 2px dashed #ddd;
-            padding-bottom: 10px;
-        }
-
-        /* Instructions Card */
-        .card {
+        /* Registration CTA Card */
+        .cta-card {
             background: var(--white);
             border: 1px solid #eee;
             border-radius: 12px;
-            padding: 20px;
+            padding: 25px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
-            border-left: 5px solid var(--maroon);
-        }
-        .step { margin-bottom: 15px; }
-        .step:last-child { margin-bottom: 0; }
-        .step-eng { font-size: 16px; font-weight: 600; color: #333; }
-        .step-tam { font-size: 14px; color: #666; }
-
-        /* Biodata Image Area */
-        .biodata-wrapper {
-            background: #fdfdfd;
-            border: 2px solid #eaeaea;
-            border-radius: 10px;
-            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-top: 5px solid var(--maroon);
             text-align: center;
-            margin-bottom: 25px;
         }
-        .biodata-wrapper img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-bottom: 15px;
-        }
+        .cta-card h2 { color: var(--maroon); margin-top: 0; font-size: 22px; margin-bottom: 15px; }
+        .cta-text { font-size: 16px; color: #444; margin-bottom: 10px; }
+        .cta-text-tam { font-size: 15px; color: #666; margin-bottom: 20px; }
 
         /* Buttons */
         .btn-group {
@@ -123,7 +93,7 @@
             flex-direction: column;
             gap: 12px;
             max-width: 400px;
-            margin: 0 auto;
+            margin: 0 auto 20px auto;
         }
         .btn {
             display: flex;
@@ -145,9 +115,29 @@
         .btn-eng { font-size: 16px; font-weight: bold; }
         .btn-tam { font-size: 13px; margin-top: 3px; opacity: 0.9; }
 
-        .btn-download { background-color: var(--maroon); color: var(--white); }
-        .btn-share { background-color: #0066cc; color: var(--white); }
-        .btn-whatsapp { background-color: var(--whatsapp-green); color: var(--white); margin-top: 10px; }
+        .btn-whatsapp { background-color: var(--whatsapp-green); color: var(--white); }
+        .btn-call { background-color: #f1f1f1; color: var(--dark-text); border: 1px solid #ddd; }
+        .btn-share { background-color: #0066cc; color: var(--white); margin-top: 10px; }
+
+        /* Sample Biodata Image Area */
+        .sample-wrapper {
+            background: #fdfdfd;
+            border: 2px dashed #eaeaea;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .sample-wrapper h3 { color: #555; font-size: 16px; margin-top: 0; margin-bottom: 15px; }
+        .sample-wrapper img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
         /* Authentic Contact Footer */
         .official-footer {
@@ -160,12 +150,13 @@
         }
         .official-footer h3 { color: var(--maroon); margin-top: 0; font-size: 18px; }
         .contact-text { font-size: 15px; color: #444; margin: 8px 0; }
-        .highlight-phone { font-size: 20px; font-weight: bold; color: var(--maroon); display: block; margin: 10px 0; text-decoration: none; }
+        .highlight-phone { font-size: 22px; font-weight: bold; color: var(--maroon); display: block; margin: 10px 0; text-decoration: none; }
         .holiday-text { color: #d9534f; font-size: 14px; font-weight: bold; }
 
         @media (max-width: 600px) {
             .content { padding: 15px; }
             .trust-badge { font-size: 14px; }
+            .cta-card h2 { font-size: 20px; }
         }
     </style>
 </head>
@@ -174,7 +165,7 @@
 <div class="main-wrapper">
 
     <div class="top-banner">
-        <img src="./banner.jpg" alt="Mithran Sengunthar Matrimony Official Banner">
+        <img src="./banner.png" alt="Mithran Sengunthar Matrimony Official Banner">
     </div>
 
     <div class="trust-badge">
@@ -183,55 +174,48 @@
     </div>
 
     <div class="content">
-        <h2 class="section-title">How It Works / வழிமுறைகள்</h2>
-        <div class="card">
-            <div class="step">
-                <div class="step-eng">1️⃣ Download the Official Biodata Format</div>
-                <div class="step-tam">அதிகாரப்பூர்வ பயோடேட்டா படிவத்தை பதிவிறக்கம் செய்யவும்</div>
-            </div>
-            <div class="step">
-                <div class="step-eng">2️⃣ Fill in the bride/groom details accurately</div>
-                <div class="step-tam">மணமகன் / மணமகள் விவரங்களை சரியாக நிரப்பவும்</div>
-            </div>
-            <div class="step">
-                <div class="step-eng">3️⃣ Send via WhatsApp to join our verified matching group</div>
-                <div class="step-tam">எங்கள் வாட்ஸ்அப்பிற்கு அனுப்பி வரன்களை பெறுங்கள்</div>
-            </div>
-        </div>
+        
+        <div class="cta-card">
+            <h2>Register Your Profile / பதிவு செய்ய</h2>
+            <p class="cta-text">To find your perfect match, please contact <strong>Jayanthi Karthikeyan</strong>. Message us on WhatsApp and we will send you the biodata format. Once filled, you will be added to our verified WhatsApp group.</p>
+            <p class="cta-text-tam">பதிவு செய்ய ஜெயந்தி கார்த்திகேயன் அவர்களை தொடர்பு கொள்ளவும். நாங்கள் உங்களுக்கு வாட்ஸ்அப்பில் பயோடேட்டா படிவத்தை அனுப்புவோம். அதை நிரப்பி அனுப்பிய பின், நீங்கள் எங்கள் வாட்ஸ்அப் குழுவில் இணைக்கப்படுவீர்கள்.</p>
 
-        <div class="biodata-wrapper">
-            <img src="./sengunthar-mudaliyar-matrimony.jpg" alt="Official Sengunthar Biodata Format">
-            
             <div class="btn-group">
-                <a href="./sengunthar-mudaliyar-matrimony.jpg" download="Official_Sengunthar_Biodata.jpg" class="btn btn-download">
-                    <span class="btn-eng">📥 Download Format</span>
-                    <span class="btn-tam">படிவத்தை பதிவிறக்கம் செய்</span>
+                <a href="https://wa.me/918072514912?text=Vanakkam,%20I%20would%20like%20to%20register%20for%20Mithran%20Matrimony.%20Please%20send%20me%20the%20biodata%20format." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                    <span class="btn-eng">💬 Message on WhatsApp</span>
+                    <span class="btn-tam">வாட்ஸ்அப்பில் மெசேஜ் அனுப்பவும்</span>
                 </a>
-                
-                <button onclick="sharePage()" class="btn btn-share">
-                    <span class="btn-eng">🔗 Share with Family</span>
-                    <span class="btn-tam">உறவினர்களுடன் பகிரவும்</span>
-                </button>
+
+                <a href="tel:+918072514912" class="btn btn-call">
+                    <span class="btn-eng">📞 Call: 8072514912</span>
+                    <span class="btn-tam">அழைக்க</span>
+                </a>
             </div>
         </div>
 
         <div class="btn-group">
-            <a href="https://wa.me/918072514912?text=Vanakkam,%20I%20have%20filled%20out%20my%20biodata%20format%20and%20want%20to%20find%20a%20match." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-                <span class="btn-eng">💬 Send Filled Form on WhatsApp</span>
-                <span class="btn-tam">நிரப்பிய படிவத்தை வாட்ஸ்அப்பில் அனுப்பவும்</span>
-            </a>
+            <button onclick="sharePage()" class="btn btn-share">
+                <span class="btn-eng">🔗 Share this Website with Family</span>
+                <span class="btn-tam">இந்த இணையதளத்தை உறவினர்களுடன் பகிரவும்</span>
+            </button>
         </div>
+
+        <div class="sample-wrapper">
+            <h3>Sample Biodata Format / மாதிரி பயோடேட்டா படிவம்</h3>
+            <img src="./sengunthar-mudaliyar-matrimony.jpg" alt="Sample Sengunthar Biodata Format">
+        </div>
+
     </div>
 
     <div class="official-footer">
         <h3>Contact Details / தொடர்பு விவரங்கள்</h3>
         <p class="contact-text"><strong>Organized by:</strong> Jayanthi Karthikeyan (ஜெயந்தி கார்த்திகேயன்)</p>
         
-        <a href="tel:+918072514912" class="highlight-phone">📞 8072514912</a>
+        <a href="tel:+918072514912" class="highlight-phone">8072514912</a>
         
         <p class="contact-text"><strong>Working Hours:</strong> 10:00 AM - 6:00 PM</p>
         <p class="holiday-text">(சனிக்கிழமை விடுமுறை / Saturday Holiday)</p>
-        <p style="margin-top: 15px; font-size: 12px; color: #888;">© Mithran Matrimony, Thanjavur. A dedicated service for the Hindu Sengunthar / Kaikolar community.</p>
+        <p style="margin-top: 15px; font-size: 12px; color: #888;">© Mithran Matrimony. A dedicated service for the Hindu Sengunthar / Kaikolar community.</p>
     </div>
 
 </div>
@@ -241,7 +225,7 @@
         if (navigator.share) {
             navigator.share({
                 title: 'Mithran Sengunthar Matrimony',
-                text: 'Download the official, free Sengunthar Matrimony Biodata format. A non-profit community service.',
+                text: 'Contact Jayanthi Karthikeyan to register for free Sengunthar matchmaking.',
                 url: window.location.href
             }).catch(console.error);
         } else {
