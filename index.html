@@ -22,30 +22,49 @@
             --gold: #D4AF37;  
             --text-main: #2b2b2b;
             --text-muted: #555555;
-            --bg-page: #f0f2f5; 
             --white: #FFFFFF;
             --whatsapp: #25D366;
             --border-light: #eaeaea;
         }
 
+        /* The new elegant background for laptop screens!
+           It creates a subtle, warm, premium glow instead of flat empty space.
+        */
         body, html { 
             margin: 0; padding: 0; 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            background-color: var(--bg-page);
+            background-color: #fdfaf6;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(212, 175, 55, 0.08) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(123, 17, 19, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(212, 175, 55, 0.08) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(123, 17, 19, 0.05) 0px, transparent 50%);
             color: var(--text-main);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Full-Width Desktop Container */
+        /* Full-Width Floating Desktop Container */
         .main-container {
-            max-width: 1100px; 
-            margin: 0 auto;
+            max-width: 1200px; /* Wider for modern laptops */
+            margin: 40px auto; /* Floats the container on desktop */
             background-color: var(--white);
-            box-shadow: 0 4px 30px rgba(0,0,0,0.08);
-            min-height: 100vh;
+            border-radius: 16px; /* Premium rounded corners on desktop */
+            overflow: hidden; /* Keeps banner inside rounded corners */
+            box-shadow: 0 25px 80px rgba(123, 17, 19, 0.06), 0 10px 30px rgba(0,0,0,0.04);
+            min-height: calc(100vh - 80px);
             display: flex;
             flex-direction: column;
+        }
+
+        /* Mobile View: Removes float and goes full edge-to-edge */
+        @media (max-width: 800px) {
+            .main-container {
+                margin: 0 auto;
+                border-radius: 0;
+                min-height: 100vh;
+                box-shadow: none;
+            }
         }
 
         /* Top Banner */
@@ -61,7 +80,7 @@
             object-fit: cover;
         }
 
-        /* Premium Trust Badge (Full Width) */
+        /* Premium Trust Badge */
         .trust-badge {
             background: linear-gradient(135deg, #fffaf0 0%, #fdf5e6 100%);
             color: var(--maroon);
